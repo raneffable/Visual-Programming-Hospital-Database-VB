@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB52E0A4-A758-4E2E-9993-648352F8AD3C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FinalProject2.My.MyApplication</StartupObject>
+    <RootNamespace>FinalProject2</RootNamespace>
+    <AssemblyName>FinalProject2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FinalProject2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FinalProject2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditDatabaseAntiBiotik.Designer.vb">
+      <DependentUpon>EditDatabaseAntiBiotik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDatabaseAntiBiotik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDatabaseNarkotika.Designer.vb">
+      <DependentUpon>EditDatabaseNarkotika.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDatabaseNarkotika.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDatabasePsikotropika.Designer.vb">
+      <DependentUpon>EditDatabasePsikotropika.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDatabasePsikotropika.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDatabaseSyringe.Designer.vb">
+      <DependentUpon>EditDatabaseSyringe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDatabaseSyringe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDatabaseThermometer.Designer.vb">
+      <DependentUpon>EditDatabaseThermometer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDatabaseThermometer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDatabaseXRay.Designer.vb">
+      <DependentUpon>EditDatabaseXRay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditDatabaseXRay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackForm.Designer.vb">
+      <DependentUpon>FeedbackForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FullItemListForm.Designer.vb">
+      <DependentUpon>FullItemListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FullItemListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorForm.Designer.vb">
+      <DependentUpon>DoctorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryForm.Designer.vb">
+      <DependentUpon>HistoryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.vb">
+      <DependentUpon>HomeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoItemForm.Designer.vb">
+      <DependentUpon>InfoItemForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoItemForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemTreeViewForm.Designer.vb">
+      <DependentUpon>ItemTreeViewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemTreeViewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PatientForm.Designer.vb">
+      <DependentUpon>PatientForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.vb">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tes.Designer.vb">
+      <DependentUpon>tes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeForm.Designer.vb">
+      <DependentUpon>WelcomeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EditDatabaseAntiBiotik.resx">
+      <DependentUpon>EditDatabaseAntiBiotik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDatabaseNarkotika.resx">
+      <DependentUpon>EditDatabaseNarkotika.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDatabasePsikotropika.resx">
+      <DependentUpon>EditDatabasePsikotropika.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDatabaseSyringe.resx">
+      <DependentUpon>EditDatabaseSyringe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDatabaseThermometer.resx">
+      <DependentUpon>EditDatabaseThermometer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDatabaseXRay.resx">
+      <DependentUpon>EditDatabaseXRay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackForm.resx">
+      <DependentUpon>FeedbackForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FullItemListForm.resx">
+      <DependentUpon>FullItemListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorForm.resx">
+      <DependentUpon>DoctorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryForm.resx">
+      <DependentUpon>HistoryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoItemForm.resx">
+      <DependentUpon>InfoItemForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemTreeViewForm.resx">
+      <DependentUpon>ItemTreeViewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientForm.resx">
+      <DependentUpon>PatientForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeForm.resx">
+      <DependentUpon>WelcomeForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
